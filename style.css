@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+*::selection {
+  background: #63728a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* navigation menu */
+
+#header {
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#menu a:hover {
+  background-color: #222;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* #title {
+  font-size: 1.5rem;
+} */
+
+.logo {
+  width: 60px;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+/* home */
+#home {
+  height: calc(100vh - 70px);
+}
+
+.container-home {
+  display: flex;
+  height: calc(100vh - 70px);
+  align-items: center;
+  justify-content: center;
+}
+
+.description-home {
+  padding: 20px;
+  margin-right: 5vw;
+}
+
+.description-home h1 {
+  font-size: 2em;
+}
+
+.description-home p {
+  margin: 18px 0;
+}
+
+.btn-cv {
+  border: 0.5px solid #63728a;
+  background: #63728a;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-cv:hover {
+  border: 0.5px solid #484b50;
+  background: #484b50;
+}
+
+.btn-lm {
+  border: 0.5px solid rgb(233, 233, 233);
+  background: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-lm:hover {
+  border: 0.5px solid #484b50;
+  background: none;
+}
+
+.profile-img {
+  width: 45vw;
+  height: 45vw;
+  max-width: 50vh;
+  max-height: 50vh;
+  border-radius: 50%;
+}
+
+/* about me */
+
+#home {
+  background-color: #38383a;
+}
+
+.about {
+  padding: 50px;
+}
+
+/* responsive menu */
+
+@media (max-width: 768px) {
+  #header {
+    justify-content: space-between;
+  }
+  #title {
+    margin-left: 5%;
+    font-size: 1.3rem;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: #1d1d1d;
+    height: 0;
+    transition: 0.6s;
+    z-index: 1000; /* garante que este elemento fique sempre acima de todos os outros*/
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid #222;
+  }
+  #nav.active #menu {
+    display: block;
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #fff;
+    gap: 0.5rem;
+  }
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .description-home {
+    margin-right: 0;
+    margin-bottom: 10%;
+  }
+  .description-home p {
+    font-size: 0.9em;
+  }
+}
