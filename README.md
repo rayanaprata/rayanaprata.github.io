@@ -1,2 +1,4 @@
-# rayanaprata.github.io
- Portfólio Pessoal :octocat: 
+# Portfólio pessoal
+ Projeto de Portfólio Pessoal, em construção 🚧 :octocat: 
+
+[Clique aqui para acessar o projeto! ✨](https://rayanaprata.github.io/)
