@@ -13,8 +13,8 @@
 <body>
 
   <header id="header">
-    <!-- <a id="title" href="#">Rayana Prata</a> -->
-    <img class="logo" src="./assets/img/8.png" alt="Logo Rayana Prata">
+    <a id="title" href="#">Rayana Prata</a>
+    <!-- <img class="logo" src="./assets/img/8.png" alt="Logo Rayana Prata"> -->
     <nav id="nav">
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
         <span id="hamburguer"></span>
@@ -22,7 +22,7 @@
       <ul id="menu" role="menu">
         <li><a href="/">Home</a></li>
         <li><a href="#about-me">About me</a></li>
-        <li><a href="/">Portfolio</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="/">Contact me</a></li>
       </ul>
     </nav>
@@ -34,7 +34,7 @@
         <h1>Hi, I am <br>Rayana Prata</h1>
         <p>in love with cats and development student</p>
         <button class="btn btn-cv"> <a href="assets/resources/Rayana-Prata-CV.pdf" download="Currículo - Rayana Prata Neves.pdf">Download CV</a></button>
-        <button class="btn btn-lm">Learn More</button>
+        <button class="btn btn-lm"><a href="#about-me">Learn More</a></button>
       </div>
       <img class="profile-img" src="./assets/img/profile-img.jpg" alt="Rayana segurando dois gatinhos">
     </div>
@@ -42,8 +42,8 @@
 
   <section id="about-me">
     <div class="about">
-      <h2>About Me</h2>
-      <p>Hello, welcome to my portfolio. <br><br>
+      <h2 class="about__title">About Me</h2>
+      <p class="about__text">Hello, welcome to my portfolio. <br><br>
 
         I need to be always looking for personal and professional growth. I believe time is a precious but limited resource. I try to use it in the smartest and most efficient way possible. <br><br>
 
@@ -63,6 +63,19 @@
 
         I believe in building a shared experience for all users. If you want to know more about me, please contact me. <br><br>
       </p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <p>In development 🚧</p>
+    <div class="interestingAreas">
+      <h2 class="interestingAreas__title">Áreas de interesse</h2>
+      <ul class="interestingAreas__elements">
+        <li>Frontend Developer</li>
+        <li>Product Manager</li>
+        <li>UX/UI Design</li>
+        <li>Web Design</li>
+      </ul>
     </div>
   </section>
 

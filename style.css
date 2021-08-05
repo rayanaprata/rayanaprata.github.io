@@ -46,13 +46,13 @@ a {
   text-decoration: none;
 }
 
-/* #title {
+#title {
   font-size: 1.5rem;
-} */
-
-.logo {
-  width: 60px;
 }
+
+/* .logo {
+  width: 60px;
+} */
 
 #btn-mobile {
   display: none;
@@ -61,6 +61,7 @@ a {
 /* home */
 #home {
   height: calc(100vh - 70px);
+  background-color: #38383a;
 }
 
 .container-home {
@@ -119,12 +120,57 @@ a {
 
 /* about me */
 
-#home {
-  background-color: #38383a;
-}
-
 .about {
   padding: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+/* portfolio */
+
+#portfolio {
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#portfolio p {
+  font-size: 1.5rem;
+  margin-bottom: 200px;
+}
+
+.interestingAreas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.interestingAreas__title {
+  margin-bottom: 50px;
+}
+
+.interestingAreas__elements {
+  list-style: none;
+  color: #535353;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.interestingAreas__elements li {
+  padding: 1rem;
+  width: 50%;
+  text-align: center;
 }
 
 /* responsive menu */
@@ -208,5 +254,11 @@ a {
   }
   .description-home p {
     font-size: 0.9em;
+  }
+  .interestingAreas__elements {
+    display: block;
+  }
+  .interestingAreas__elements li {
+    width: 100%;
   }
 }
