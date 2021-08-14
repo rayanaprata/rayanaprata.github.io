@@ -37,6 +37,26 @@ body {
   padding: 0.5rem;
 }
 
+#nav li {
+  position: relative;
+}
+
+#nav a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #63728a;
+  transition: 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0px;
+}
+
+#nav a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 #menu a:hover {
   background-color: #222;
 }
@@ -61,7 +81,7 @@ a {
 /* home */
 #home {
   height: calc(100vh - 70px);
-  background-color: #38383a;
+  /* background-color: #38383a; */
 }
 
 .container-home {
@@ -121,15 +141,24 @@ a {
 /* about me */
 
 .about {
-  padding: 50px;
+  padding: 0 8em;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #38383a;
 }
 
 .about__title {
   margin-bottom: 50px;
+}
+
+.about__text a {
+  color: #95a1b4;
+}
+
+.about__text a:hover {
+  color: #6f7888;
 }
 
 /* portfolio */
@@ -200,6 +229,9 @@ a {
     padding: 1rem 0;
     margin: 0 1rem;
     border-bottom: 2px solid #222;
+  }
+  #nav a:after {
+    display: none;
   }
   #nav.active #menu {
     display: block;
