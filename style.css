@@ -177,6 +177,14 @@ a {
   margin-bottom: 200px;
 }
 
+#portfolio p a {
+  color: #95a1b4;
+}
+
+#portfolio p a:hover {
+  color: #6f7888;
+}
+
 .interestingAreas {
   display: flex;
   flex-direction: column;
@@ -200,6 +208,30 @@ a {
   padding: 1rem;
   width: 50%;
   text-align: center;
+}
+
+/* contact */
+
+#contact p {
+  text-align: center;
+}
+
+#contact ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 100px;
+}
+
+#contact li {
+  margin: 15px;
+}
+
+#contact li:hover {
+  background-color: #38383a;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 /* responsive menu */
