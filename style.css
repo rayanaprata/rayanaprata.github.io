@@ -161,6 +161,10 @@ a {
   color: #6f7888;
 }
 
+.about-margin {
+  margin-left: 25px;
+}
+
 /* portfolio */
 
 #portfolio {
